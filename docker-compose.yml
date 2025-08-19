@@ -1,0 +1,8 @@
+services:
+  ui:
+    image: web:10.0
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - 8888:80
